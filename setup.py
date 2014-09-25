@@ -26,6 +26,7 @@ setup(
         'esef_sso_client',
         'esef_sso_client.models',
         'esef_sso_server',
+        'esef_sso_server.models',
     ],
     include_package_data=True,
     zip_safe=False,
