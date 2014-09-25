@@ -1,0 +1,10 @@
+django
+<<<<<<< HEAD
+git+https://github.com/egemsoft/esef-auth.git
+django-simple-sso
+mock
+requests
+=======
+django-guardian
+mock
+>>>>>>> 8b685542c998b8c22f53efb0635b1d60e1e7a4d6
