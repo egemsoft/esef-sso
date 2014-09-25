@@ -1,4 +1,4 @@
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 __author__ = 'ahmetdal'
 
 
-class EsefSSOUser(get_user_model()):
+class EsefSSOUser(User):
     class Meta:
         app_label = 'esef_sso_client'
 
