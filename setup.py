@@ -10,7 +10,6 @@ except IOError:
 setup(
     name='esef-auth',
     version='1.0.0.0',
-<<<<<<< HEAD
     description='EgemSoft SSO Server and Client code is including.',
     author='EgemSoft',
     author_email='ahmet.dal@egemsoft.net',
@@ -31,32 +30,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     license='GPLv3',
-=======
-    description='Auth utilities contains data level filtering etc.',
-    author='EgemSoft',
-    author_email='ahmet.dal@egemsoft.net',
-    url='https://github.com/egemsoft/esef-auth.git',
-    keywords=["django", "egemsoft", "esefauth"],
-    install_requires=[
-        "Django", "django-guardian"
-    ],
-    packages=[
-        'esef_auth',
-        'esef_auth.management',
-        'esef_auth.management.commands',
-        'esef_auth.models',
-        'esef_auth.models.managers',
-        'esef_auth.utils',
-        'esef_auth.views',
-        'esef_auth.services',
-        'esef_auth.forms',
-        'esef_auth.tests',
-        'esef_auth.tests.models'
-    ],
-    include_package_data=True,
-    zip_safe=False,
-    license='GPL',
->>>>>>> 8b685542c998b8c22f53efb0635b1d60e1e7a4d6
     platforms=['any'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
