@@ -8,7 +8,7 @@ __author__ = 'ahmetdal'
 
 class EsefSSOUser(get_user_model()):
     class Meta:
-        app_label = 'esef_sso'
+        app_label = 'esef_sso_client'
 
     access_token = models.CharField(_('Last Access Token'), max_length=200, null=True, blank=True)
 
