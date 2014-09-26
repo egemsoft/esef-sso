@@ -1,6 +1,6 @@
 django
 git+https://github.com/egemsoft/esef-auth.git
-git+https://github.com/egemsoft/esef-auth.git
+git+https://github.com/egemsoft/django-simple-sso.git
 mock
 requests
 

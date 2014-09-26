@@ -4,4 +4,4 @@ from simple_sso.sso_server.models import Consumer
 __author__ = 'ahmetdal'
 
 
-Consumer.objects=FilteredModelManager()
+# Consumer.objects=FilteredModelManager()
