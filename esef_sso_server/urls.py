@@ -7,6 +7,7 @@ from esef_sso_server import sso_server
 
 urlpatterns = patterns('',
                        url('', include('django.contrib.auth.urls')),
+                       url(r'^auth/', include('esef_auth.urls')),
                        url(r'^admin/', include(admin.site.urls)),
                        url(r'^server/', include(sso_server.get_urls())),
 )
