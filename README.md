@@ -23,7 +23,7 @@ or deploy it on gunicorn behind a reverse proxy like nginx.
 
 The server uses `sqllite3` database as default. If you want to change it, you can give it in `settings.py` here;
 
-```
+```python
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -61,7 +61,7 @@ pip install git+https://github.com/egemsoft/esef-sso.git
 
 
 If you really want to client set some variables in your settings file;
-```
+```python
 INSTALLED_APPS = (
 	 ...,
     'esef_sso_client',
