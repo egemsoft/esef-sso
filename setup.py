@@ -8,7 +8,7 @@ except IOError:
     long_description = ''
 
 setup(
-    name='esef-auth',
+    name='esef-sso',
     version='1.0.0.0',
     description='EgemSoft SSO Server and Client code is including.',
     author='EgemSoft',
