@@ -16,3 +16,5 @@ venv
 build
 docs/_build
 *sqlite*
+*bower*
+static/bower_components

@@ -15,6 +15,13 @@ cd esef-sso
 pip install -r requirements.txt
 ```
 
+Install statics;
+
+```
+python manage.py bower_init esef_sso_server
+python manage.py bower_install
+```
+
 Deploy it as simple
 ```
 python manage.py runserver

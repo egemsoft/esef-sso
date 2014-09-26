@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'esef_auth',
     'guardian',
     'simple_sso.sso_server',
-    'esef_sso_server'
+    'esef_sso_server',
+    'bower'
 )
 
 MIDDLEWARE_CLASSES = (
