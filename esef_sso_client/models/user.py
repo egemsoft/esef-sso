@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from simple_sso.sso_client import client
+from esef_sso_client import sso_client
 
 
 __author__ = 'ahmetdal'
@@ -15,7 +15,6 @@ class EsefSSOUser(AbstractUser):
 
 
     def is_authenticated(self):
-        super(EsefSSOUser, self).is_authenticated()
-        return client.is_authenticated(self)
+        return sso_client.is_authenticated(self)
 
 
