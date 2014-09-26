@@ -1,3 +1,1 @@
 include README.md
-recursive-include static *
-recursive-include esef_auth/templates *
