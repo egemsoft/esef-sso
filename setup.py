@@ -21,8 +21,8 @@ setup(
         "requests",
     ],
     dependency_links=[
-        "git+https://github.com/egemsoft/esef-auth/tarball/master/#egg=1.0.0.0",
-        "git+https://github.com/egemsoft/django-simple-sso/tarball/master#egg=0.9.3",
+        "https://github.com/egemsoft/esef-auth/tarball/master/#egg=1.0.0.0",
+        "https://github.com/egemsoft/django-simple-sso/tarball/master#egg=0.9.3",
     ],
 
     packages=[
