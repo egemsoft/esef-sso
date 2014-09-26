@@ -2,7 +2,7 @@
 
 Contains deployable `SSO server` which is run as Django web application and Django client code and utilities.
 
-
+![egemsoft-logo](http://egemsoft.net/images/logo.png)
 #esef-sso-server
 This is Django web application to provide SSO server. It contains, login, logout, asking user is athenticated and consumer authorization. This means, this is not an embeded library that you may want to put in `INSTALLED_APPS` of your project settings. This is required to be deploy somewhere if you want to use `esef-sso-client`. 
 ##Usage
