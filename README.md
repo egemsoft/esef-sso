@@ -59,8 +59,8 @@ pip install git+https://github.com/egemsoft/django-simple-sso.git
 pip install git+https://github.com/egemsoft/esef-sso.git
 ```
 
-Add `esef_sso_client` in your `INSTALLED_APPS`  and `AUTHENTICATION_BACKEND` in your `settings` file .
 
+If you really want to client set some variables in your settings file;
 ```
 INSTALLED_APPS = (
 	 ...,
@@ -72,10 +72,9 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',  # default
     'esef_sso_client.backends.ConsumerAccessPermissionBackend',
 )
-```
 
-If you really want to client set some variables in your settings file;
-```
+AUTH_USER_MODEL = 'esef_sso_client.EsefSSOUser'
+
 ESEF_SSO_CLIENT_REQUIRED=True
 SSO_SERVER = 'http://localhost:8000/server/' #this is the SSO server you'r using
 SSO_PUBLIC_KEY = 'DNFGcfYvbvGr4bbndso0YQ3Tkw5oDKsO1NYdnbzR8Ool5soP3AxeFezJ4HtIGs1M'
@@ -83,4 +82,6 @@ SSO_PRIVATE_KEY = 'qqbLWf6x01dVBNXtfciG9wwEt7uuwEvflpltF0N2LywNA0JQeSflyuVM8XQqT
 
 LOGIN_URL = '/sso/login/'
 ```
-**SSO\_PUBLIC\_KEY** and **SSO\_PRIVATE\_KEY** are generate by `esef-sso-server`. You have to set them.
+**SSO\_PUBLIC\_KEY** and **SSO\_PRIVATE\_KEY** are generate by `esef-sso-server`. You have to set them. 
+
+Let `esef-sso-client` do the rest.
