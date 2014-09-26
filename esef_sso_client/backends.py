@@ -1,5 +1,4 @@
 from __future__ import unicode_literals
-from esef_client import SSO_CLIENT_REQUIRED, sso_client
 
 
 class ConsumerAccessPermissionBackend(object):
@@ -11,7 +10,7 @@ class ConsumerAccessPermissionBackend(object):
         return None
 
     def has_perm(self, user_obj, perm, obj=None):
-
+        from esef_sso_client import SSO_CLIENT_REQUIRED, sso_client
 
         if SSO_CLIENT_REQUIRED:
             if not sso_client.get_user(user_obj.access_token):
