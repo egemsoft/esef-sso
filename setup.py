@@ -17,7 +17,7 @@ setup(
         "Django",
         "webservices",
         "requests",
-        "django-simple-sso==0.9.3"
+        "django-simple-sso==0.9.3",
         "esef-auth==1.0.0.0",
     ],
     dependency_links=[
