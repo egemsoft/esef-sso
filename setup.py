@@ -15,13 +15,13 @@ setup(
     keywords=["django", "egemsoft", "sso", "esefsso"],
     dependency_links=[
         "https://github.com/egemsoft/esef-auth/tarball/master/#egg=esef-auth-1.0.0.0",
-        "https://github.com/egemsoft/django-simple-sso/tarball/master#egg=django-simple-sso-0.9.3",
+        "https://github.com/egemsoft/django-simple-sso/tarball/master#egg=esef-django-simple-sso-0.9.3",
     ],
     install_requires=[
         "Django",
         "webservices",
         "requests",
-        "django-simple-sso==0.9.3",
+        "esef-django-simple-sso==0.9.3",
         "esef-auth==1.0.0.0",
     ],
     packages=[
